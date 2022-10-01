@@ -1,7 +1,7 @@
 // Import modules
 import "./form.js";
 import "./submit.js";
-import { initdb } from "./database.js";
+import { initDb, getDb, postDb } from './database';
 
 // Import CSS
 import "../css/index.css";
@@ -14,8 +14,15 @@ import Bear from "../images/bear.png";
 import Dog from "../images/dog.png";
 
 window.addEventListener("load", function () {
-  initdb();
+  initDb();
   document.getElementById("logo").src = Logo;
   document.getElementById("bearThumbnail").src = Bear;
   document.getElementById("dogThumbnail").src = Dog;
 });
+
+// getDb();
+// postDb("Lernantino", "learnantino@test.com", 8186601234, "Bear");
+// getDb();
+
+
+
