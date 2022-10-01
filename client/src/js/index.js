@@ -1,7 +1,7 @@
 // Import modules
 import "./form.js";
 // import "./submit.js";
-import { initDb, getDb, postDb } from "./database";
+import { initDb, postDb, deleteDb } from "./database";
 import { fetchCards } from "./cards";
 import { toggleForm, clearForm } from "./form.js";
 
@@ -58,6 +58,11 @@ form.addEventListener("submit", (event) => {
   fetchCards();
 });
 
-
-
-// getDb();
+window.deleteCard = (e) => {
+  // Grabs the id from the button element attached to the contact card.
+  let id = parseInt(e.id);
+  // Delete the card
+  deleteDb(id);
+  // Reload the DOM
+  fetchCards();
+};
