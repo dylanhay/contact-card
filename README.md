@@ -27,15 +27,14 @@ https://gentle-castle-11300.herokuapp.com/
 * Heroku
 
 ## Landing Page
-![Screenshot](./assets/images/contact-card-land.png "Landing Page")
+![Screenshot](./assets/images/contact-card-land2.png "Landing Page")
 
 ## Installation Instructions  
 
 * Node.js must be installed to run this application locally.
 * Node.js can be downloaded and installed from https://nodejs.org/en/download/  
-* To initialize Node.js for this application, enter `npm init` in the command line while in the root folder
 * To install the required npm packages, enter `npm install` in the command line while in the root folder
-* Enter `npm start` in the command line while in the root folder to launch the application to launch the express server at `http://localhost:3001/` in the browser
+* Enter `npm start` in the command line while in the root folder to launch the application at `http://localhost:3001/` in the browser
 
 ## Contribution
 Made with ❤️ by Dylan Hay
