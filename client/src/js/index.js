@@ -15,12 +15,28 @@ import Logo from "../images/logo.png";
 import Bear from "../images/bear.png";
 import Dog from "../images/dog.png";
 
+const installBtn = document.getElementById("installBtn");
+
 window.addEventListener("load", function () {
   initDb();
   fetchCards();
   document.getElementById("logo").src = Logo;
   document.getElementById("bearThumbnail").src = Bear;
   document.getElementById("dogThumbnail").src = Dog;
+});
+
+window.addEventListener("beforeinstallprompt", (event) => {
+  event.preventDefault();
+  installBtn.style.visibility = "visible";
+  installBtn.addEventListener("click", () => {
+    event.prompt();
+    installBtn.setAttribute("disabled", true);
+    installBtn.textContent = "Installed!";
+  });
+});
+
+window.addEventListener("appinstalled", (event) => {
+  console.log("👍", "appinstalled", event);
 });
 
 // Form functionality
