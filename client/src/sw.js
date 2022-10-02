@@ -32,7 +32,7 @@ registerRoute(
 );
 
 // Register route for caching images
-// The cache first strategy is often the best choice for images because it saves bandwidth and improves performance.
+// Cache first strategy saves bandwidth and improves performance.
 registerRoute(
   ({ request }) => request.destination === 'image',
   new CacheFirst({

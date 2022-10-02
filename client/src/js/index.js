@@ -57,7 +57,7 @@ form.addEventListener("submit", (event) => {
   let email = document.getElementById("email").value;
   let profile = document.querySelector('input[type="radio"]:checked').value;
 
-  // Calls the editDB function passing in any values from the form element as well as the ID of the contact that we are updating
+  // Calls the editDB function passing in any values from the form element as well as the ID of the contact that is being updated
   editDb(profileId, name, email, phone, profile);
 
   // Post form data to IndexedDB OR Edit an existing card in IndexedDB

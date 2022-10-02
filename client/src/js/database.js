@@ -2,9 +2,9 @@ import { openDB } from "idb";
 import "regenerator-runtime/runtime";
 
 export const initDb = async () => {
-  // We are creating a new database named 'contact_db' which will be using version 1 of the database.
+  // Creating a new database named 'contact_db' which will be using version 1 of the database.
   openDB("contact_db", 1, {
-    // Add our database schema if it has not already been initialized.
+    // Add database schema if it has not already been initialized.
     upgrade(db) {
       if (db.objectStoreNames.contains("contacts")) {
         console.log("contacts store already exists");
@@ -17,11 +17,11 @@ export const initDb = async () => {
   });
 };
 
-// Export a function we will use to GET to the database.
+// Export a function that will GET the database.
 export const getDb = async () => {
   console.log("GET from the database");
 
-  // Create a connection to the IndexedDB database and the version we want to use.
+  // Create a connection to the IndexedDB database and the version to be used.
   const contactDb = await openDB("contact_db", 1);
 
   // Create a new transaction and specify the store and data privileges.
@@ -39,11 +39,11 @@ export const getDb = async () => {
   return result;
 };
 
-// Export a function we will use to POST to the database.
+// Export a function that will POST to the database.
 export const postDb = async (name, email, phone, profile) => {
   console.log("POST to the database");
 
-  // Create a connection to the database and specify the version we want to use.
+  // Create a connection to the database and specify the version to be used.
   const contactDb = await openDB("contact_db", 1);
 
   // Create a new transaction and specify the store and data privileges.
@@ -65,10 +65,11 @@ export const postDb = async (name, email, phone, profile) => {
   console.log("🚀 - data saved to the database", result);
 };
 
+// Export a function that will DELETE from the database.
 export const deleteDb = async (id) => {
   console.log("DELETE from the database", id);
 
-  // Create a connection to the IndexedDB database and the version we want to use.
+  // Create a connection to the IndexedDB database and the version to be used.
   const contactDb = await openDB("contact_db", 1);
 
   // Create a new transaction and specify the store and data privileges.
