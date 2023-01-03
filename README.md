@@ -6,8 +6,8 @@ A progressive web application that manages a company's employee cards using webp
 ## License  
 This application is covered under the following license. Please review the link below for additional information pertaining to the license.
     
-![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)  
-https://www.gnu.org/licenses/gpl-3.0
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)  
+https://opensource.org/licenses/MIT
 
 ## Table of Contents
 [Deployed Application](#deployed-application)  
