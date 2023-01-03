@@ -3,19 +3,26 @@
 ## Description
 A progressive web application that manages a company's employee cards using webpack, IndexedDB and Workbox. Users have offline capabilities - the application can be installed and run locally on a user's device.
 
+## License  
+This application is covered under the following license. Please review the link below for additional information pertaining to the license.
+    
+![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)  
+https://www.gnu.org/licenses/gpl-3.0
+
 ## Table of Contents
 [Deployed Application](#deployed-application)  
 [Built With](#built-with)  
 [Landing Page](#landing-page)  
-[Installation Instructions](#installation-instructions)  
+[Installation](#installation)  
 [Contribution](#contribution) 
 
 ## Deployed Application
 https://gentle-castle-11300.herokuapp.com/
 
 ## Built With
+* JavaScript
 * Node.js
-* Express
+* Express.js
 * Webpack
 * IndexedDB
 * Workbox
@@ -24,17 +31,16 @@ https://gentle-castle-11300.herokuapp.com/
 * HTML
 * CSS
 * Bootstrap
+* Git
 * Heroku
 
 ## Landing Page
 ![Screenshot](./assets/images/contact-card-land2.png "Landing Page")
 
-## Installation Instructions  
-
-* Node.js must be installed to run this application locally.
-* Node.js can be downloaded and installed from https://nodejs.org/en/download/  
-* To install the required npm packages, enter `npm install` in the command line while in the root folder
-* Enter `npm start` in the command line while in the root folder to launch the application at `http://localhost:3001/` in the browser
+## Installation  
+To run locally once cloned:
+* Enter `npm install` in the CLI to install the required npm packages
+* Enter `npm start` in the CLI to launch the application
 
 ## Contribution
-Made with ❤️ by Dylan Hay
+Built by Dylan Hay
